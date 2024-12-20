@@ -23,7 +23,14 @@ import {
   jobit,
   tripguide,
   threejs,
+  ibs,
 } from "../assets";
+
+import zackImage from '../assets/zack.jpg'; 
+import beaconpathway from "../assets/beaconpathway.jpeg";
+import umb from "../assets/umb.jpeg";
+import chatbot from "../assets/chatbot.jpeg";
+
 
 export const navLinks = [
   {
@@ -116,140 +123,126 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineer Intern",
+    company_name: "IBS Software",
+    icon: ibs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2023 - August 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Developed and optimized web and mobile applications for airline and travel management systems.",
+      "Utilized JavaScript, HTML, CSS, and React to create responsive UIs, enhancing user experience for clients.",
+      "Built back-end services using Node.js and integrated Restful APIs",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Software Engineering Fellow",
+    company_name: "Headstarter AI",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "July 2024 - September 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developed and deployed multiple projects, including a Gemini-integrated chatbot for company inquiries, a secure payment system using Stripe, and a MongoDB database for transaction management",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "FullStack Developer",
+    company_name: "UrWealth",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "August 2024 - December 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developed secure user authentication for MongoDB using SCRAM-SHA-256 and built RESTful API en points for a financial advisory platform",
+      "Implemented JWT for managing user sessions and APIcaccess control",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Technology Specialist",
+    company_name: "Umass Boston",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "February 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed responsive website for the Technovator, boosting engagement of our department by 40%",
+      "Led team in creating a Zoom SDK and React-based app, improving online meeting efficiency for 16,000+ students",
+      "Engineered an AI-powered chatbot for Canvas LMS, reducing student support response times by 60%",
+      "Implemented cybersecurity protocols aligned with NIST standards, enhancing data protection across university platforms",
+      "Building Beacon Pathway, a hackathon-winning app built with Next.js, TypeScript, and GraphQL. Implemented serverless architecture using Vercel for deployment, Prisma for database ORM, and NextAuth for authentication. Integrated machine learning with TensorFlow.js to provide personalized campus resource recommendations, increasing student engagement with university services by 25%"
     ],
   },
 ];
+
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Mustafa's proficiency in Information Technology is commendable, particularly in his work on the UMass Boston BeaconFlex Zoom App. His ability to grasp complex technical concepts and apply them to practical solutions has been a key factor in the success of our projects.",
+    name: "Zack Ronald",
+    designation: "Manager of IT Services",
+    company: "UMass Boston",
+    image: zackImage, // Reference the imported image
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "BeaconPathway",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Hackathon winning web app, Beacon Pathway is an AI-driven, user-centered platform designed to empower students. By taking a brief, personalized quiz, students receive customized opportunities and resources that perfectly align with their individual interests and goals.",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "HTML",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: beaconpathway,
+    source_code_link: "https://github.com/Mustafaahmed00/Beacon_Pathway",
   },
   {
-    name: "Job IT",
+    name: "BeaconFlex",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables Umass Boston students to join and create meetings with additional features such as dual camera functionality.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tailwind.css",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: umb,
+    source_code_link: "https://github.com/Mustafaahmed00/BeaconFlex",
   },
   {
-    name: "Trip Guide",
+    name: "Chatbot",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A chatbot designed for canvas website",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Html",
         color: "green-text-gradient",
       },
       {
@@ -257,8 +250,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: chatbot,
+    source_code_link: "https://github.com/Mustafaahmed00/chatbot",
   },
 ];
 
