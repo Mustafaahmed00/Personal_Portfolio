@@ -30,6 +30,7 @@ import zackImage from '../assets/zack.jpg';
 import beaconpathway from "../assets/beaconpathway.jpeg";
 import umb from "../assets/umb.jpeg";
 import chatbot from "../assets/chatbot.jpeg";
+//import ibs from "../assets/ibs.jpeg";
 
 
 export const navLinks = [
