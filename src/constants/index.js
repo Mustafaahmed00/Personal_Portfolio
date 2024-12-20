@@ -24,12 +24,14 @@ import {
   tripguide,
   threejs,
   ibs,
+  headstarter,
+  urwealth,
 } from "../assets";
 
 import zackImage from '../assets/zack.jpg'; 
 import beaconpathway from "../assets/beaconpathway.jpeg";
-import umb from "../assets/umb.jpeg";
-import chatbot from "../assets/chatbot.jpeg";
+import chatbot from "../assets/chatbot.webp";
+import umb from "../assets/umb.png";
 //import ibs from "../assets/ibs.jpeg";
 
 
@@ -139,7 +141,7 @@ const experiences = [
   {
     title: "Software Engineering Fellow",
     company_name: "Headstarter AI",
-    icon: tesla,
+    icon: headstarter,
     iconBg: "#E6DEDD",
     date: "July 2024 - September 2024",
     points: [
@@ -151,7 +153,7 @@ const experiences = [
   {
     title: "FullStack Developer",
     company_name: "UrWealth",
-    icon: shopify,
+    icon: urwealth,
     iconBg: "#383E56",
     date: "August 2024 - December 2024",
     points: [
@@ -164,7 +166,7 @@ const experiences = [
   {
     title: "Technology Specialist",
     company_name: "Umass Boston",
-    icon: meta,
+    icon: umb,
     iconBg: "#E6DEDD",
     date: "February 2023 - Present",
     points: [

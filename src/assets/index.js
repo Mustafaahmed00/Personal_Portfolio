@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import ibs from "./ibs.jpeg";
+import headstarter from "./headstarter.jpeg";
+import urwealth from "./urwealth.jpeg";
 
 export {
   logo,
@@ -61,4 +63,6 @@ export {
   jobit,
   tripguide,
   ibs,
+  headstarter,
+  urwealth
 };
