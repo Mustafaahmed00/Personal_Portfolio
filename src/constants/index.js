@@ -32,6 +32,7 @@ import zackImage from '../assets/zack.jpg';
 import beaconpathway from "../assets/beaconpathway.jpeg";
 import chatbot from "../assets/chatbot.webp";
 import umb from "../assets/umb.png";
+import diidii from "../assets/diidii.jpeg"
 //import ibs from "../assets/ibs.jpeg";
 
 
@@ -125,6 +126,20 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Software Developer",
+    company_name: "diidii",
+    icon: diidii,
+    iconBg: "#383E56",
+    date: "October 2024 - January 2025",
+    points: [
+      "Developed Web and mobile Application with various features for patients with dementia",
+      "Led weekly stand-ups and sprint planning meetings as part of an agile development team",
+      "Collaborated with healthcare professionals to implement user-friendly features tailored for dementia patients",
+      "Utilized JavaScript, React, and Node.js to create responsive interfaces focused on accessibility",
+      "Optimized application performance resulting in 40% faster load times"
+    ],
+  },
   {
     title: "Software Engineer Intern",
     company_name: "IBS Software",
