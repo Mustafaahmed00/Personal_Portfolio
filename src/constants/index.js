@@ -15,13 +15,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   ibs,
   headstarter,
@@ -65,7 +58,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Database Management",
     icon: creator,
   },
 ];
@@ -225,6 +218,14 @@ const projects = [
         name: "CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Next.js",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "orange-text-gradient",
+      },
     ],
     image: beaconpathway,
     source_code_link: "https://github.com/Mustafaahmed00/Beacon_Pathway",
@@ -246,6 +247,14 @@ const projects = [
         name: "Tailwind.css",
         color: "pink-text-gradient",
       },
+      {
+        name: "getStream.io",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "React",
+        color: "teal-text-gradient",
+      },
     ],
     image: umb,
     source_code_link: "https://github.com/Mustafaahmed00/BeaconFlex",
@@ -253,7 +262,7 @@ const projects = [
   {
     name: "Chatbot",
     description:
-      "A chatbot designed for canvas website",
+      "An AI-powered chatbot for Canvas LMS, integrated with Gemini AI model and Cloud Translation API, offering multilingual support, real-time text-to-speech (TTS), and speech-to-text (STT). It features a feedback-driven ranking system, where users can vote on answers, and the most upvoted responses are prioritized.",
     tags: [
       {
         name: "Python",
@@ -266,6 +275,18 @@ const projects = [
       {
         name: "css",
         color: "pink-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "red-text-gradient",
+      },
+      {
+        name: "TensorFlow",
+        color: "indigo-text-gradient",
+      },
+      {
+        name: "Gemini",
+        color: "yellow-text-gradient",
       },
     ],
     image: chatbot,
