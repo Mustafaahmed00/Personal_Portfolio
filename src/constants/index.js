@@ -26,8 +26,7 @@ import beaconpathway from "../assets/beaconpathway.jpeg";
 import chatbot from "../assets/chatbot.webp";
 import umb from "../assets/umb.png";
 import diidii from "../assets/diidii.jpeg"
-//import ibs from "../assets/ibs.jpeg";
-
+import MyDocs from "../assets/MyDocs.png"
 
 export const navLinks = [
   {
@@ -292,6 +291,44 @@ const projects = [
     image: chatbot,
     source_code_link: "https://github.com/Mustafaahmed00/chatbot",
   },
+  {
+    name: "MyDocs",
+    description:
+      "MyDocs is a real-time collaborative document editing application built with Next.js, Liveblocks, and Tailwind CSS. It replicates core features of Google Docs, enabling multiple users to collaborate in real-time on shared documents. This project demonstrates expertise in real-time applications and modern web development.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "LiveBlocks",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Lexical Editor",
+        color: "red-text-gradient",
+      },
+      {
+        name: "ShadCN",
+        color: "indigo-text-gradient",
+      },
+      {
+        name: "Gemini",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "teal-text-gradient"
+      }
+    ],
+    image: MyDocs,
+    source_code_link: "https://github.com/Mustafaahmed00/MyDocs",
+    live_demo_link: "https://my-word-docs.vercel.app/"
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
