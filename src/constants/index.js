@@ -27,6 +27,7 @@ import chatbot from "../assets/chatbot.webp";
 import umb from "../assets/umb.png";
 import diidii from "../assets/diidii.jpeg"
 import MyDocs from "../assets/MyDocs.png"
+import CareerAI from "../assets/careerai1.png"
 
 export const navLinks = [
   {
@@ -323,11 +324,61 @@ const projects = [
       {
         name: "TailwindCSS",
         color: "teal-text-gradient"
+      },
+      {
+        name: "Clerk",
+        color: "red-text-gradient"
       }
     ],
     image: MyDocs,
     source_code_link: "https://github.com/Mustafaahmed00/MyDocs",
     live_demo_link: "https://my-word-docs.vercel.app/"
+  },
+  {
+    name: "CareerAI",
+    description:
+      "CareerAI is your all-in-one career companion, powered by AI to help you take your professional journey to the next level. From crafting standout resumes to nailing interviews, I have built the tools you'd actually want to use.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Inngest",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Neon",
+        color: "red-text-gradient",
+      },
+      {
+        name: "ShadCN",
+        color: "indigo-text-gradient",
+      },
+      {
+        name: "Gemini",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "teal-text-gradient"
+      },
+      {
+        name: "Google Cloud Speech-to-text",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "Clerk",
+        color: "red-text-gradient"
+      }
+    ],
+    image: CareerAI,
+    source_code_link: "https://github.com/Mustafaahmed00/CareerAI",
+    live_demo_link: "https://career-ai-bay.vercel.app/"
   }
 ];
 
