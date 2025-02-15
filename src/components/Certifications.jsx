@@ -1,50 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { certifications } from '../constants';
-import { Document, Page, pdfjs } from 'react-pdf';
 
-// Set the worker source
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-const CertificationCard = ({ pdf, name }) => {
-  const [pdfUrl, setPdfUrl] = useState(null);
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  useEffect(() => {
-    // Create a URL for the PDF blob
-    const url = URL.createObjectURL(new Blob([pdf], { type: 'application/pdf' }));
-    setPdfUrl(url);
-    
-    // Cleanup URL on unmount
-    return () => URL.revokeObjectURL(url);
-  }, [pdf]);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
+const CertificationCard = ({ pdf, name, preview }) => {
   return (
     <div className="w-72 h-96 mx-4">
-      <div className="relative w-full h-full bg-tertiary rounded-2xl p-4 overflow-hidden">
+      <div className="relative w-full h-full bg-tertiary rounded-2xl p-4 overflow-hidden group">
         <div className="w-full h-full flex flex-col items-center justify-between">
-          <div className="w-full h-[75%] overflow-hidden rounded-xl bg-white">
-            {pdfUrl && (
-              <Document
-                file={pdfUrl}
-                onLoadSuccess={onDocumentLoadSuccess}
-                className="w-full h-full"
-              >
-                <Page
-                  pageNumber={pageNumber}
-                  width={280}
-                  renderTextLayer={false}
-                  renderAnnotationLayer={false}
-                  className="pdf-page"
-                />
-              </Document>
-            )}
+          {/* Preview Container */}
+          <div className="w-full h-[75%] overflow-hidden rounded-xl relative">
+            <img 
+              src={preview} 
+              alt={`${name} preview`}
+              className="w-full h-full object-cover"
+            />
+            {/* Hover Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span className="text-white text-sm">Click to view full certificate</span>
+            </div>
           </div>
           
           <div className="w-full mt-4 flex flex-col items-center">
@@ -53,7 +27,7 @@ const CertificationCard = ({ pdf, name }) => {
             </h3>
             
             <button 
-              onClick={() => window.open(pdfUrl, '_blank')}
+              onClick={() => window.open(pdf, '_blank')}
               className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all"
             >
               View Certificate
@@ -91,7 +65,7 @@ const Certifications = () => {
           transition={{
             repeat: Infinity,
             repeatType: "reverse",
-            duration: 10,
+            duration: 15,
             ease: "linear"
           }}
         >

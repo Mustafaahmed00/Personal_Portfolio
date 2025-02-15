@@ -28,8 +28,8 @@ import umb from "../assets/umb.png";
 import diidii from "../assets/diidii.jpeg";
 import MyDocs from "../assets/MyDocs.png";
 import CareerAI from "../assets/careerai1.png";
-import Certificate1 from "../assets/certificates/Award of Excellence.pdf"; // Correct import for PDF
-import Certificate2 from "../assets/certificates/Certifications.pdf"; // Correct import for PDF
+import Certificate1 from "../assets/certificates/Award of Excellence.pdf"; 
+import preview1 from "../assets/certificates/preview1.png"
 
 export const navLinks = [
   {
@@ -388,10 +388,7 @@ const certifications = [
   {
     name: "Certificate 1",
     pdf: Certificate1, // Replace with actual image import
-  },
-  {
-    name: "Certificate 2",
-    pdf: Certificate2 // Replace with actual image import
+    preview: preview1,
   },
 ];
 
