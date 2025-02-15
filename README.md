@@ -10,8 +10,6 @@
       Source Code
     </a>
   </h3>
-  
-  ![Portfolio Preview](![portfolio](https://github.com/user-attachments/assets/dc4534a4-bdac-42f4-b0d4-53297e0b8ccb))
 </div>
 
 ## ⚡ Overview
