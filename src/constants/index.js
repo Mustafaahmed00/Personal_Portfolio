@@ -30,6 +30,10 @@ import MyDocs from "../assets/MyDocs.png";
 import CareerAI from "../assets/careerai1.png";
 import Certificate1 from "../assets/certificates/Award of Excellence.pdf"; 
 import preview1 from "../assets/certificates/preview1.png"
+import Certificate2 from "../assets/certificates/LinkedIn.pdf"
+import preview2 from "../assets/certificates/preview2.png"
+import Certificate3 from "../assets/certificates/Appreciation.pdf"
+import preview3 from "../assets/certificates/preview3.png"
 
 export const navLinks = [
   {
@@ -389,6 +393,16 @@ const certifications = [
     name: "Certificate 1",
     pdf: Certificate1, // Replace with actual image import
     preview: preview1,
+  },
+  {
+    name: "Certificate 2",
+    pdf: Certificate2,// Replace with actual image import
+    preview: preview2,
+  },
+  {
+    name: "Certificate 3",
+    pdf: Certificate3,
+    preview: preview3,
   },
 ];
 
