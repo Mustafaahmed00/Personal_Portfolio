@@ -10,15 +10,13 @@
       Source Code
     </a>
   </h3>
-  
-  ![Portfolio Preview](![portfolio](https://github.com/user-attachments/assets/dc4534a4-bdac-42f4-b0d4-53297e0b8ccb))
 </div>
 
 ## ⚡ Overview
 Modern, responsive portfolio website showcasing my projects, skills, and professional journey. Built with cutting-edge technologies and best practices in web development.
 
 ## 🛠️ Built With
-- **Frontend Framework:** React, Next.js
+- **Frontend Framework:** React, Next.js, Vite.js
 - **3D Graphics:** Three.js
 - **Styling:** Tailwind CSS, Framer Motion
 - **Deployment:** Vercel
@@ -40,7 +38,7 @@ Modern, responsive portfolio website showcasing my projects, skills, and profess
 │   ├── components/
 │   ├── assets/
 │   ├── constants/
-│   ├── styles/
+│   ├── utils/
 │   └── hoc/
 ├── public/
 └── README.md
