@@ -29,11 +29,12 @@ import diidii from "../assets/diidii.jpeg";
 import MyDocs from "../assets/MyDocs.png";
 import CareerAI from "../assets/careerai1.png";
 import Certificate1 from "../assets/certificates/Award of Excellence.pdf"; 
-import preview1 from "../assets/certificates/preview1.png"
-import Certificate2 from "../assets/certificates/LinkedIn.pdf"
-import preview2 from "../assets/certificates/preview2.png"
-import Certificate3 from "../assets/certificates/Appreciation.pdf"
-import preview3 from "../assets/certificates/preview3.png"
+import preview1 from "../assets/certificates/preview1.png";
+import Certificate2 from "../assets/certificates/LinkedIn.pdf";
+import preview2 from "../assets/certificates/preview2.png";
+import Certificate3 from "../assets/certificates/Appreciation.pdf";
+import preview3 from "../assets/certificates/preview3.png";
+import pdfai from "../assets/pdf-ai.jpg";
 
 export const navLinks = [
   {
@@ -385,6 +386,40 @@ const projects = [
     image: CareerAI,
     source_code_link: "https://github.com/Mustafaahmed00/CareerAI",
     live_demo_link: "https://career-ai-bay.vercel.app/"
+  },
+  {
+    name: "Smart PDF Summarizer",
+    description:
+      "Smart PDF Summarizer is a Streamlit web application that lets you upload PDF documents and generate summaries using Google's advanced generative AI. It extracts text from your PDF and provides summaries in various formats, including concise, bullet points, detailed, or executive style, all while allowing you to control the maximum word count.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Streamlit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PyPDF2",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "LangChain",
+        color: "red-text-gradient",
+      },
+      {
+        name: "GoogleGenerativeAI",
+        color: "indigo-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: pdfai,
+    source_code_link: "https://github.com/Mustafaahmed00/pdf_summarizer/",
+    live_demo_link: "https://pdfsummarizer-adcffa43m5lyffvqvzwrf9.streamlit.app/"
   }
 ];
 

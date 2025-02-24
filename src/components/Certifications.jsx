@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { styles } from '../styles';
 import { certifications } from '../constants';
+import { SectionWrapper } from "../hoc";
 
 const CertificationCard = ({ pdf, name, preview }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -146,4 +147,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default SectionWrapper(Certifications, "Certifications")
