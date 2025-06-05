@@ -52,6 +52,7 @@ const ExperienceCard = ({ experience }) => {
           }
             className="experience-card"
         >
+          <motion.div whileHover={{ scale: 1.03 }} transition={{ duration: 0.3 }}>
             <div>
                 <h3 className='text-white font-semibold text-xl' style={{ color: '#E6CCFF' }}>{experience.title}</h3>
                 <p
@@ -73,6 +74,7 @@ const ExperienceCard = ({ experience }) => {
                     </li>
                 ))}
             </ul>
+          </motion.div>
         </VerticalTimelineElement>
     );
 };

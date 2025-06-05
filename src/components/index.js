@@ -24,5 +24,5 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Certifications
+  Certifications,
 };

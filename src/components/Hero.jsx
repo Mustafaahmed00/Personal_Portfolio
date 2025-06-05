@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ComputersCanvas } from './canvas';
 import { styles } from '../styles';
 import { Download } from 'lucide-react';
-import resume from '../assets/Mohammad_Mustafa_SoftwareEngineer.pdf';
+import resume_pdf from '../assets/Resume.pdf';
 
 const Hero = () => {
   const techStack = [
@@ -19,10 +19,9 @@ const Hero = () => {
   ];
 
   const handleDownload = () => {
-    // Create an anchor element and trigger download
     const link = document.createElement('a');
-    link.href = resume;
-    link.download = 'Mohammad_Mustafa_SoftwareEngineer.pdf'; // Name the downloaded file
+    link.href = resume_pdf;
+    link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -101,10 +100,9 @@ const Hero = () => {
               >
                 <button 
                   onClick={handleDownload}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
                 >
-                  <Download size={20} />
-                  <span>Download Resume</span>
+                  Download Resume
                 </button>
               </motion.div>
             </div>

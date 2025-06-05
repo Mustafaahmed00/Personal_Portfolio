@@ -46,10 +46,43 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
 ];
+
+const resumeSummary = "Software developer with 2+ years of experience delivering high-performance web applications and enterprise solutions. Proven track record of optimizing system performance, reducing transaction times, and enhancing user experiences through innovative technology implementations. Expertise in full-stack development, microservices architecture, and agile methodologies, consistently driving operational efficiency and implementing robust, scalable software solutions that directly contribute to business growth.";
+
+const educationDetails = [
+  {
+    degree: "Bachelor of Science in Computer Science",
+    institution: "University of Massachusetts",
+    icon: umb, // Using the umb icon for UMass
+    iconBg: "#E6DEDD", // Consistent with other UMass styling if applicable
+    date: "", // You can add graduation date here if you like
+    points: [
+      // You can add any specific achievements or relevant coursework here later
+    ],
+  },
+];
+
+const skillsDetails = {
+  methodologies: ["SDLC", "Agile", "Waterfall"],
+  programmingLanguages: ["Python", "SQL", "Java"],
+  frontendDevelopment: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Redux", "jQuery"],
+  backendDevelopment: ["Spring Boot", "Spring MVC", "Hibernate", "Django", "Node.js", "Flask", "REST APIs"],
+  databases: ["MySQL", "PostgreSQL", "MongoDB"],
+  cloudPlatforms: ["AWS (EC2, S3)"],
+  containerizationAndVirtualization: ["Docker", "Kubernetes"],
+  developmentToolsAndIDEs: ["Visual Studio Code", "IntelliJ", "Eclipse"],
+  testingTools: ["Jest", "Pytest", "Postman"],
+  versionControl: ["Git", "GitHub"],
+  softSkills: ["Problem-solving", "Communication Skills", "Time Management", "Attention to detail", "Collaborate with cross-functional team"],
+};
 
 const services = [
   {
@@ -128,54 +161,30 @@ const technologies = [
 const experiences = [
   {
     title: "Software Developer",
-    company_name: "diidii",
-    icon: diidii,
+    company_name: "Freelancer (Remote)",
+    icon: creator,
     iconBg: "#383E56",
-    date: "October 2024 - January 2025",
+    date: "January 2024 – February 2025",
     points: [
-      "Developed Web and mobile Application with various features for patients with dementia",
-      "Led weekly stand-ups and sprint planning meetings as part of an agile development team",
-      "Collaborated with healthcare professionals to implement user-friendly features tailored for dementia patients",
-      "Utilized JavaScript, React, and Node.js to create responsive interfaces focused on accessibility",
-      "Optimized application performance resulting in 40% faster load times"
+      "Developed and implemented new features for patient management systems using Java and Spring Boot, collaborating with cross-functional healthcare teams to translate medical requirements into functional code that processed over 50,000 patient records daily.",
+      "Enhanced customer-facing healthcare applications using React and JavaScript, improving UI/UX with responsive HTML5/CSS3 designs that reduced patient navigation steps by 40% and increased mobile patient engagement metrics.",
+      "Applied JUnit and Postman for systematic testing and debugging of Java backend services, contributing to a 25% reduction in clinical system incidents while ensuring compliance with HIPAA medical security protocols.",
+      "Participated in Agile SDLC practices using Git/GitHub for version control, consistently meeting sprint commitments by delivering quality code while maintaining detailed documentation for knowledge sharing in medical software development.",
+      "Assisted in developing RESTful APIs that integrated electronic health record services with MySQL databases, working within the Spring Boot framework to ensure system performance during peak patient admission periods.",
     ],
   },
   {
-    title: "Software Engineer Intern",
-    company_name: "IBS Software",
-    icon: ibs,
-    iconBg: "#383E56",
-    date: "May 2023 - August 2023",
-    points: [
-      "Developed and optimized web and mobile applications for airline and travel management systems.",
-      "Utilized JavaScript, HTML, CSS, and React to create responsive UIs, enhancing user experience for clients.",
-      "Built back-end services using Node.js and integrated Restful APIs",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Software Engineering Fellow",
-    company_name: "Headstarter AI",
-    icon: headstarter,
+    title: "Software Developer",
+    company_name: "Freelancer (Remote)",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "July 2024 - September 2024",
+    date: "January 2023 – December 2023",
     points: [
-      "Developed and deployed multiple projects, including a Gemini-integrated chatbot for company inquiries, a secure payment system using Stripe, and a MongoDB database for transaction management",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "FullStack Developer",
-    company_name: "UrWealth",
-    icon: urwealth,
-    iconBg: "#383E56",
-    date: "August 2024 - December 2024",
-    points: [
-      "Developed secure user authentication for MongoDB using SCRAM-SHA-256 and built RESTful API en points for a financial advisory platform",
-      "Implemented JWT for managing user sessions and APIcaccess control",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed responsive web applications using React (TypeScript) and Spring Boot, implementing modular e-commerce platform features with Redux state management to enhance user engagement and application performance.",
+      "Designed secure authentication systems utilizing Node.js and Express.js, implementing role-based access control and deploying services on AWS EC2 to strengthen application security and access management.",
+      "Created interactive data visualization dashboards using MongoDB aggregation framework and Node.js, optimizing MongoDB database queries to reduce report generation time by 35% and facilitate real-time data communication.",
+      "Implemented microservices architecture using Docker and Kubernetes, streamlining deployment processes through GitHub Actions and collaborating with cross-functional teams to improve continuous integration workflows.",
+      "Conducted comprehensive software testing using Jest and Postman, actively participating in Agile methodologies to maintain sprint commitments and develop automated test scripts that significantly improved code quality and reduced manual testing efforts.",
     ],
   },
   {
@@ -183,7 +192,7 @@ const experiences = [
     company_name: "Umass Boston",
     icon: umb,
     iconBg: "#E6DEDD",
-    date: "February 2023 - Present",
+    date: "February 2023 - May 2025",
     points: [
       "Developed responsive website for the Technovator, boosting engagement of our department by 40%",
       "Led team in creating a Zoom SDK and React-based app, improving online meeting efficiency for 16,000+ students",
@@ -194,7 +203,6 @@ const experiences = [
   },
 ];
 
-
 const testimonials = [
   {
     testimonial:
@@ -204,7 +212,6 @@ const testimonials = [
     company: "UMass Boston",
     image: zackImage, // Reference the imported image
   },
-
 ];
 
 const projects = [
@@ -442,4 +449,4 @@ const certifications = [
 ];
 
 
-export { services, technologies, experiences, testimonials, projects, certifications };
+export { services, technologies, experiences, testimonials, projects, certifications, resumeSummary, educationDetails, skillsDetails };
