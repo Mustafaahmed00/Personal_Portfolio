@@ -1,28 +1,37 @@
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Certifications } from "./components";
+import { Hero, Navbar, ThemeToggle, About, Experience, Tech, Skills, Works, Certifications, Feedbacks, Contact, InteractiveResume } from "./components";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <InteractiveResume /> */}
-        <Certifications />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <BrowserRouter>
+          <div className='relative z-0 bg-primary'>
+            <ThemeToggle />
+            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+              <Navbar />
+              <Hero />
+            </div>
+            
+            <About />
+            <Experience />
+            <Tech />
+            <Skills />
+            <InteractiveResume />
+            <Works />
+            <Certifications />
+            <Feedbacks />
+            
+            <div className='relative z-0'>
+              <Contact />
+            </div>
+          </div>
+        </BrowserRouter>
+      </ThemeProvider>
+    </ErrorBoundary>
   );
 }
 

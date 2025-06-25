@@ -1,30 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ComputersCanvas } from './canvas';
 import { styles } from '../styles';
-import { Download } from 'lucide-react';
-import resume_pdf from '../assets/Resume.pdf';
+import { Download, Github, Linkedin } from 'lucide-react';
+import { techStack } from '../constants';
+import { github } from '../assets';
+import { StarsCanvas, ComputersCanvas } from './canvas';
 
 const Hero = () => {
-  const techStack = [
-    'React', 
-    'Next.js', 
-    'TypeScript',
-    'Shadcn/UI',
-    'TailwindCSS',
-    'Node.js',
-    'MongoDB',
-    'Three.js',
-    'Framer Motion'
-  ];
-
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = resume_pdf;
+    link.href = '/Resume.pdf';
     link.download = 'Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleGitHubClick = () => {
+    window.open('https://github.com/Mustafaahmed00', '_blank');
+  };
+
+  const handleLinkedInClick = () => {
+    window.open('https://www.linkedin.com/in/mustafa-ahmed002/', '_blank');
   };
 
   return (
@@ -91,27 +88,41 @@ const Hero = () => {
                 ))}
               </motion.div>
 
-              {/* Resume Button */}
+              {/* Resume Button and Social Links */}
               <motion.div
-                className="pt-6"
+                className="pt-6 flex flex-col sm:flex-row gap-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
               >
                 <button 
                   onClick={handleDownload}
-                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
                 >
+                  <Download size={20} />
                   Download Resume
+                </button>
+                
+                <button 
+                  onClick={handleGitHubClick}
+                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
+                >
+                  <Github size={20} />
+                  View GitHub
+                </button>
+
+                <button 
+                  onClick={handleLinkedInClick}
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
+                >
+                  <Linkedin size={20} />
+                  View LinkedIn
                 </button>
               </motion.div>
             </div>
           </motion.div>
         </div>
       </div>
-
-      {/* 3D Computer Model */}
-      <ComputersCanvas />
 
       {/* Scroll Indicator */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
@@ -130,6 +141,13 @@ const Hero = () => {
             />
           </div>
         </a>
+      </div>
+
+      <StarsCanvas />
+      
+      {/* 3D Computer Model */}
+      <div className='absolute inset-0 top-0 left-0 w-full h-full overflow-hidden'>
+        <ComputersCanvas />
       </div>
     </section>
   );

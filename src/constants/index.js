@@ -55,6 +55,18 @@ export const navLinks = [
   },
 ];
 
+export const techStack = [
+  'React',
+  'Next.js',
+  'TypeScript',
+  'Shadcn/UI',
+  'TailwindCSS',
+  'Node.js',
+  'MongoDB',
+  'Three.js',
+  'Framer Motion'
+];
+
 const resumeSummary = "Software developer with 2+ years of experience delivering high-performance web applications and enterprise solutions. Proven track record of optimizing system performance, reducing transaction times, and enhancing user experiences through innovative technology implementations. Expertise in full-stack development, microservices architecture, and agile methodologies, consistently driving operational efficiency and implementing robust, scalable software solutions that directly contribute to business growth.";
 
 const educationDetails = [
@@ -243,6 +255,7 @@ const projects = [
     ],
     image: beaconpathway,
     source_code_link: "https://github.com/Mustafaahmed00/Beacon_Pathway",
+    live_demo_link: "https://github.com/Mustafaahmed00/Beacon_Pathway",
   },
   {
     name: "BeaconFlex",

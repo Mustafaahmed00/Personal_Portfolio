@@ -55,23 +55,30 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`} className="cursor-pointer">{nav.title}</a>
             </li>
           ))}
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
+          <button
+            aria-label='Toggle menu'
+            aria-expanded={toggle}
+            aria-controls='mobile-menu'
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
-          />
+          >
+            <img
+              src={toggle ? close : menu}
+              alt='menu'
+            />
+          </button>
 
           <div
+            id='mobile-menu'
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
@@ -80,7 +87,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`font-poppins font-medium text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
@@ -88,7 +95,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`} className="cursor-pointer">{nav.title}</a>
                 </li>
               ))}
             </ul>
