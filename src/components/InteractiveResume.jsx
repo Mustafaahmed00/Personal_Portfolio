@@ -8,9 +8,9 @@ const resumeData = {
   personalInfo: {
     name: "Mohammad Mustafa Ahmed",
     title: "Full Stack Developer",
-    email: "M.Ahmed002@umb.edu",
+    email: "mohammad.m@jobstechmails.com",
     location: "Boston, MA",
-    phone: "+1 (617) 555-0123",
+    phone: "+1 (312) 375-5058",
     website: "mustafaahmed.me"
   },
   summary: "Passionate Full Stack Developer with expertise in building scalable applications and implementing AI solutions. Specialized in React, Next.js, Node.js, and Python with experience in healthcare systems and educational technology.",
