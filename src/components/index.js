@@ -11,6 +11,10 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Certifications from './Certifications';
 import InteractiveResume from './InteractiveResume';
+import GitHubActivity from './GitHubActivity';
+import MouseTrail from './MouseTrail';
+import AnimatedBackground from './AnimatedBackground';
+import CustomCursor from './CustomCursor';
 import ThemeToggle from './ThemeToggle';
 import OptimizedImage from './OptimizedImage';
 import ErrorBoundary from './ErrorBoundary';
@@ -32,6 +36,10 @@ export {
   StarsCanvas,
   Certifications,
   InteractiveResume,
+  GitHubActivity,
+  MouseTrail,
+  AnimatedBackground,
+  CustomCursor,
   ThemeToggle,
   OptimizedImage,
   ErrorBoundary,
