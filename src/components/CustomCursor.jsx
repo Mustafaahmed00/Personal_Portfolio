@@ -58,11 +58,12 @@ const CustomCursor = () => {
       {/* Simple cursor dot */}
       <div
         ref={cursorRef}
-        className="fixed top-0 left-0 w-4 h-4 bg-purple-400 rounded-full pointer-events-none z-[60] opacity-0 transition-opacity duration-200"
+        className="fixed top-0 left-0 w-4 h-4 bg-purple-400 rounded-full pointer-events-none z-20 opacity-0 transition-opacity duration-200"
         style={{
           transform: 'translate(-50%, -50%)',
           filter: 'blur(0.5px)',
-          boxShadow: '0 0 10px rgba(168, 85, 247, 0.5)'
+          boxShadow: '0 0 10px rgba(168, 85, 247, 0.5)',
+          zIndex: 20
         }}
       />
     </>

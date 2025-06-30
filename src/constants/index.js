@@ -50,6 +50,10 @@ export const navLinks = [
     title: "Projects",
   },
   {
+    id: "blog",
+    title: "Blog",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -227,6 +231,47 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Model Extraction Attack",
+    description:
+      "A machine learning project demonstrating model extraction attacks using knowledge distillation techniques. Uses a pre-trained CIFAR-10 model as the target (teacher) and attempts to extract its knowledge using the STL-10 dataset, simulating real-world black-box attack scenarios. Achieved 7.02% improvement in accuracy through knowledge distillation.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TensorFlow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Keras",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Knowledge Distillation",
+        color: "indigo-text-gradient",
+      },
+      {
+        name: "STL-10 Dataset",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "CIFAR-10",
+        color: "teal-text-gradient",
+      },
+      {
+        name: "Jupyter",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&crop=center",
+    source_code_link: "https://github.com/Mustafaahmed00/model-extraction-attack",
+  },
   {
     name: "BeaconPathway",
     description:

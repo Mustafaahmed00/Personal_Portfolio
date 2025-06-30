@@ -18,6 +18,7 @@ import CustomCursor from './CustomCursor';
 import ThemeToggle from './ThemeToggle';
 import OptimizedImage from './OptimizedImage';
 import ErrorBoundary from './ErrorBoundary';
+import Blog from './Blog';
 
 export {
   Hero,
@@ -43,4 +44,5 @@ export {
   ThemeToggle,
   OptimizedImage,
   ErrorBoundary,
+  Blog,
 };

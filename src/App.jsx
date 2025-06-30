@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 
-import { Hero, Navbar, ThemeToggle, About, Experience, Tech, Skills, Works, Certifications, Feedbacks, Contact, InteractiveResume, GitHubActivity, MouseTrail, AnimatedBackground, CustomCursor } from "./components";
+import { Hero, Navbar, ThemeToggle, About, Experience, Tech, Skills, Works, Certifications, Feedbacks, Contact, InteractiveResume, GitHubActivity, MouseTrail, AnimatedBackground, CustomCursor, Blog } from "./components";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 const App = () => {
@@ -11,8 +11,9 @@ const App = () => {
         <BrowserRouter>
           <div className='relative z-0 bg-primary'>
             <AnimatedBackground />
-            <MouseTrail />
-            <CustomCursor />
+            {/* Temporarily disabled to fix button click issues */}
+            {/* <MouseTrail /> */}
+            {/* <CustomCursor /> */}
             <ThemeToggle />
             <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
               <Navbar />
@@ -26,6 +27,7 @@ const App = () => {
             <GitHubActivity />
             <InteractiveResume />
             <Works />
+            <Blog />
             <Certifications />
             <Feedbacks />
             
