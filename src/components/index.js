@@ -5,6 +5,7 @@ import About from "./About";
 import Tech from "./Tech";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Organizations from "./Organizations";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
@@ -19,6 +20,7 @@ import ThemeToggle from './ThemeToggle';
 import OptimizedImage from './OptimizedImage';
 import ErrorBoundary from './ErrorBoundary';
 import Blog from './Blog';
+import BackToTop from './BackToTop';
 
 export {
   Hero,
@@ -27,6 +29,7 @@ export {
   Tech,
   Skills,
   Experience,
+  Organizations,
   Works,
   Feedbacks,
   Contact,
@@ -45,4 +48,5 @@ export {
   OptimizedImage,
   ErrorBoundary,
   Blog,
+  BackToTop,
 };

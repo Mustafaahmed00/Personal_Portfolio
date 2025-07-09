@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 
-import { Hero, Navbar, ThemeToggle, About, Experience, Tech, Skills, Works, Certifications, Feedbacks, Contact, InteractiveResume, GitHubActivity, MouseTrail, AnimatedBackground, CustomCursor, Blog } from "./components";
+import { Hero, Navbar, ThemeToggle, About, Experience, Organizations, Tech, Skills, Works, Certifications, Feedbacks, Contact, InteractiveResume, GitHubActivity, MouseTrail, AnimatedBackground, CustomCursor, Blog, BackToTop } from "./components";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
             
             <About />
             <Experience />
+            <Organizations />
             <Tech />
             <Skills />
             <GitHubActivity />
@@ -34,6 +35,8 @@ const App = () => {
             <div className='relative z-0'>
               <Contact />
             </div>
+            
+            <BackToTop />
           </div>
         </BrowserRouter>
       </ThemeProvider>

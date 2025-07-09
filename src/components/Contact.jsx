@@ -68,16 +68,18 @@ const Contact = () => {
     setLoading(true);
     setStatus({ type: '', message: '' });
 
+    // Get current timestamp
+    const now = new Date().toLocaleString();
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Mohammad Mustafa Ahmed",
           from_email: form.email,
-          to_email: "mohammad.m@jobstechmails.com",
           message: form.message,
+          time: now,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -198,16 +200,11 @@ const Contact = () => {
             className='bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 py-4 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-lg shadow-purple-500/25 transition-all duration-300 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed'
           >
             {loading ? (
-              <>
-                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                Sending...
-              </>
+              <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
             ) : (
-              <>
-                <Send className="w-4 h-4" />
-                Send Message
-              </>
+              <Send className="w-5 h-5" />
             )}
+            {loading ? "Sending..." : "Send Message"}
           </motion.button>
         </form>
 
