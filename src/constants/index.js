@@ -35,6 +35,7 @@ import preview2 from "../assets/certificates/preview2.png";
 import Certificate3 from "../assets/certificates/Appreciation.pdf";
 import preview3 from "../assets/certificates/preview3.png";
 import pdfai from "../assets/pdf-ai.jpg";
+import saayam from "../assets/saayam.jpg";
 
 export const navLinks = [
   {
@@ -231,6 +232,47 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Saayam Web Application",
+    description:
+      "Contributing to Saayam, an open-source humanitarian web application that connects volunteers with people in need. My key contributions include implementing internationalization (i18n) by translating language JSON files for multiple languages, enhancing the user experience for global users. Additionally, I've been working on AI/ML integration to improve the platform's matching algorithms and user recommendations. The project uses React, Redux Toolkit, and modern web technologies to create a scalable platform for community support and volunteer coordination.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux Toolkit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "i18next",
+        color: "red-text-gradient",
+      },
+      {
+        name: "AI/ML",
+        color: "indigo-text-gradient",
+      },
+      {
+        name: "Open Source",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Humanitarian",
+        color: "teal-text-gradient",
+      },
+      {
+        name: "Volunteer Platform",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: saayam,
+    source_code_link: "https://github.com/saayam-for-all/webapp",
+  },
   {
     name: "Model Extraction Attack",
     description:
