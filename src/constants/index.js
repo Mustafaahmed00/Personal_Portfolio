@@ -177,6 +177,34 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Full Stack Developer",
+    company_name: "Narrative AI",
+    icon: creator,
+    iconBg: "#383E56",
+    date: "March 2024 – Present",
+    points: [
+      "Developing and implementing backend APIs using Python and Django, creating robust endpoints that support the company's AI-powered prompt engineering platform serving multiple enterprise clients.",
+      "Designing and implementing a comprehensive credit system architecture using Django REST Framework that manages user quotas, billing, and resource allocation across different AI models and services, ensuring scalable monetization.",
+      "Leading architectural restructuring initiatives to improve system performance and scalability, planning migration to microservices architecture and implementing database optimization strategies with PostgreSQL.",
+      "Contributing to frontend development using React and TypeScript, building intuitive user interfaces for prompt management, testing workflows, and analytics dashboards that enhance user experience.",
+      "Collaborating with cross-functional teams to integrate AI/ML models into the Django-based platform, ensuring seamless prompt evaluation and optimization capabilities across different language models.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Saayam for All",
+    icon: creator,
+    iconBg: "#E6DEDD",
+    date: "January 2024 – June 2024",
+    points: [
+      "Implemented comprehensive internationalization (i18n) system for the humanitarian web application, setting up multi-language support using i18next and React-i18next to serve global communities in 8+ languages.",
+      "Developed and deployed a RAG (Retrieval-Augmented Generation) chatbot system using Python, LangChain, and OpenAI APIs, enabling users to get instant answers about volunteer opportunities and humanitarian resources.",
+      "Built responsive web components using React and Redux Toolkit, creating scalable UI elements that improved user engagement by 35% and enhanced the platform's accessibility for diverse global users.",
+      "Designed and implemented vector database integration for the chatbot system, optimizing information retrieval and ensuring accurate, context-aware responses for humanitarian aid queries.",
+      "Collaborated with international volunteers and stakeholders to ensure culturally appropriate localization, testing language implementations across different regions and gathering user feedback for continuous improvement.",
+    ],
+  },
+  {
     title: "Software Developer",
     company_name: "Freelancer (Remote)",
     icon: creator,

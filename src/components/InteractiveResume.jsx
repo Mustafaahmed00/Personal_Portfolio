@@ -18,6 +18,40 @@ const resumeData = {
   experience: [
     {
       id: 1,
+      title: "Full Stack Developer",
+      company: "Narrative AI",
+      location: "Remote",
+      period: "March 2024 – Present",
+      type: "Full-time",
+      description: "Developing AI-powered prompt engineering platform with Python/Django backend APIs, credit system, and React frontend interfaces.",
+      achievements: [
+        "Developing and implementing backend APIs using Python and Django for AI-powered prompt engineering platform",
+        "Designing and implementing comprehensive credit system architecture using Django REST Framework managing user quotas and billing",
+        "Leading architectural restructuring initiatives for improved system performance and scalability with PostgreSQL optimization",
+        "Contributing to frontend development using React and TypeScript for prompt management interfaces",
+        "Collaborating with cross-functional teams to integrate AI/ML models into the Django-based platform"
+      ],
+      technologies: ["Python", "Django", "Django REST Framework", "PostgreSQL", "React", "TypeScript", "AI/ML", "API Development", "System Architecture"]
+    },
+    {
+      id: 2,
+      title: "Full Stack Developer",
+      company: "Saayam for All",
+      location: "Remote",
+      period: "January 2024 – June 2024",
+      type: "Full-time",
+      description: "Implemented internationalization and RAG chatbot system for humanitarian web application.",
+      achievements: [
+        "Implemented comprehensive i18n system for multi-language support in 8+ languages",
+        "Developed and deployed RAG chatbot system using Python, LangChain, and OpenAI APIs",
+        "Built responsive web components using React and Redux Toolkit, improving user engagement by 35%",
+        "Designed vector database integration for chatbot system with optimized information retrieval",
+        "Collaborated with international volunteers for culturally appropriate localization testing"
+      ],
+      technologies: ["React", "Redux Toolkit", "Python", "LangChain", "OpenAI APIs", "i18next", "Vector Database"]
+    },
+    {
+      id: 3,
       title: "Software Developer",
       company: "Freelancer (Remote)",
       location: "Remote",
@@ -34,7 +68,7 @@ const resumeData = {
       technologies: ["Java", "Spring Boot", "React", "JavaScript", "MySQL", "JUnit", "Postman", "Git"]
     },
     {
-      id: 2,
+      id: 4,
       title: "Software Developer",
       company: "Freelancer (Remote)",
       location: "Remote",
@@ -51,7 +85,7 @@ const resumeData = {
       technologies: ["React", "TypeScript", "Spring Boot", "Node.js", "Express.js", "MongoDB", "Docker", "Kubernetes", "Jest"]
     },
     {
-      id: 3,
+      id: 5,
       title: "Technology Specialist",
       company: "UMass Boston",
       location: "Boston, MA",
