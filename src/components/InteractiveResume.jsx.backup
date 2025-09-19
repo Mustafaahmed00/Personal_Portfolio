@@ -17,26 +17,11 @@ const resumeData = {
   
   experience: [
     {
-      id: 6,
-      title: "Software Developer",
-      company: "PNC Bank",
-      location: "Massachusetts",
-      period: "June 2025 – Present",
-      type: "Full-time",
-      description: "Developing RESTful APIs and scalable financial applications using Python Django, PostgreSQL, and AWS cloud services.",
-      achievements: [
-        "Developed RESTful APIs using Python Django with PostgreSQL databases and Redis caching for high-volume financial transactions",
-        "Implemented microservices architecture using Docker and Kubernetes with MongoDB integration for enhanced system scalability",
-        "Architected and deployed scalable financial applications on AWS using ECS and Lambda functions with automated CI/CD pipelines",
-        "Established comprehensive testing framework using Jest and pytest with automated testing pipelines for improved code quality"
-      ],
-      technologies: ["Python", "Django", "PostgreSQL", "Redis", "React", "Redux", "Docker", "Kubernetes", "AWS", "ECS", "Lambda", "S3", "Jest", "pytest"]
-    },    {
-      id: 6,
+      id: 1,
       title: "Full Stack Developer",
       company: "Narrative AI",
       location: "Remote",
-      period: "March 2024 – March 2025",
+      period: "March 2024 – Present",
       type: "Full-time",
       description: "Developing AI-powered prompt engineering platform with Python/Django backend APIs, credit system, and React frontend interfaces.",
       achievements: [
@@ -49,7 +34,7 @@ const resumeData = {
       technologies: ["Python", "Django", "Django REST Framework", "PostgreSQL", "React", "TypeScript", "AI/ML", "API Development", "System Architecture"]
     },
     {
-      id: 6,
+      id: 2,
       title: "Full Stack Developer",
       company: "Saayam for All",
       location: "Remote",
@@ -66,7 +51,7 @@ const resumeData = {
       technologies: ["React", "Redux Toolkit", "Python", "LangChain", "OpenAI APIs", "i18next", "Vector Database"]
     },
     {
-      id: 6,
+      id: 3,
       title: "Software Developer",
       company: "Freelancer (Remote)",
       location: "Remote",
@@ -83,7 +68,7 @@ const resumeData = {
       technologies: ["Java", "Spring Boot", "React", "JavaScript", "MySQL", "JUnit", "Postman", "Git"]
     },
     {
-      id: 6,
+      id: 4,
       title: "Software Developer",
       company: "Freelancer (Remote)",
       location: "Remote",
@@ -100,7 +85,7 @@ const resumeData = {
       technologies: ["React", "TypeScript", "Spring Boot", "Node.js", "Express.js", "MongoDB", "Docker", "Kubernetes", "Jest"]
     },
     {
-      id: 6,
+      id: 5,
       title: "Technology Specialist",
       company: "UMass Boston",
       location: "Boston, MA",

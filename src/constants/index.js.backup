@@ -177,24 +177,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Developer",
-    company_name: "PNC Bank",
-    icon: backend,
-    iconBg: "#383E56",
-    date: "June 2025 – Present",
-    points: [
-      "Developed RESTful APIs using Python Django with PostgreSQL databases and Redis caching to efficiently handle high-volume financial transactions, creating responsive React Redux frontends with HTML5/CSS3 styling.",
-      "Implemented microservices architecture using Docker and Kubernetes with MongoDB integration, collaborating with cross-functional teams using Git version control and Agile methodologies for enhanced system scalability.",
-      "Architected and deployed scalable financial applications on AWS using ECS and Lambda functions, implementing automated CI/CD pipelines with GitHub Actions and integrating S3 for secure file storage, reducing infrastructure costs and significantly improving application reliability.",
-      "Established comprehensive testing framework using Jest and pytest, implementing automated testing pipelines that significantly enhanced code quality and reduced deployment issues effectively.",
-    ],
-  },
-  {
     title: "Full Stack Developer",
     company_name: "Narrative AI",
     icon: creator,
     iconBg: "#383E56",
-    date: "March 2024 – March 2025",
+    date: "March 2024 – Present",
     points: [
       "Developing and implementing backend APIs using Python and Django, creating robust endpoints that support the company's AI-powered prompt engineering platform serving multiple enterprise clients.",
       "Designing and implementing a comprehensive credit system architecture using Django REST Framework that manages user quotas, billing, and resource allocation across different AI models and services, ensuring scalable monetization.",
