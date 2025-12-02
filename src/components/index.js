@@ -21,6 +21,9 @@ import OptimizedImage from './OptimizedImage';
 import ErrorBoundary from './ErrorBoundary';
 import Blog from './Blog';
 import BackToTop from './BackToTop';
+import LoadingScreen from './LoadingScreen';
+import Stats from './Stats';
+import TypeWriter from './TypeWriter';
 
 export {
   Hero,
@@ -34,9 +37,9 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas,
   Certifications,
   InteractiveResume,
@@ -49,4 +52,7 @@ export {
   ErrorBoundary,
   Blog,
   BackToTop,
+  LoadingScreen,
+  Stats,
+  TypeWriter,
 };

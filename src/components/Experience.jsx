@@ -14,69 +14,82 @@ import { textVariant } from "../utils/motion";
 
 const cardHoverStyle = `
 .experience-card:hover .vertical-timeline-element-content {
-    box-shadow: 5px 5px 15px rgba(153, 51, 255, 0.7); /* Darker purple shadow on hover - more intense */
-    border-color: #C5A3FF; /* Even lighter purple border on hover */
+    box-shadow: 0 10px 40px rgba(153, 51, 255, 0.5), 0 0 20px rgba(197, 163, 255, 0.3);
+    border-color: #C5A3FF;
+    transform: translateY(-5px);
+}
+
+.experience-card .vertical-timeline-element-content {
+    transition: all 0.3s ease-in-out;
 }
 `;
 
 const ExperienceCard = ({ experience }) => {
-  return (
-      <VerticalTimelineElement
-          contentStyle={{
-              background: "#1C1821", 
-              color: "#EEE8EF", 
-              boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.35)", 
-              border: "2px solid #915EFF", 
-              transition: "box-shadow 0.3s ease, border-color 0.3s ease"
-          }}
-          contentArrowStyle={{ borderRight: "7px solid #915EFF" }} 
-          date={experience.date}
-          iconStyle={{
-              background: experience.iconBg,
-              color: "#fff",
-              borderRadius: "50%",
-              boxShadow: "0 0 0 4px #1C1821", 
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-          }}
-          icon={
-              <div className='flex justify-center items-center w-full h-full' style={{ backgroundColor: '#C5A3FF' }}> 
-                  <img
-                      src={experience.icon}
-                      alt={experience.company_name}
-                      className='w-[80%] h-[80%] object-contain'
-                      style={{ borderRadius: "50%" }}
-                  />
-              </div>
-          }
-            className="experience-card"
-        >
-          <motion.div whileHover={{ scale: 1.03 }} transition={{ duration: 0.3 }}>
-            <div>
-                <h3 className='text-white font-semibold text-xl' style={{ color: '#E6CCFF' }}>{experience.title}</h3>
-                <p
-                    className='text-gray-400 text-base font-normal mt-1'
-                    style={{ margin: 0, color: '#D09CFA' }} 
-                >
-                    {experience.company_name}
-                </p>
-            </div>
+  return (
+      <VerticalTimelineElement
+          contentStyle={{
+              background: "linear-gradient(135deg, #1C1821 0%, #151030 100%)",
+              color: "#EEE8EF",
+              boxShadow: "0 5px 20px rgba(0, 0, 0, 0.4)",
+              border: "2px solid #915EFF",
+              borderRadius: "16px",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid #915EFF" }}
+          date={experience.date}
+          iconStyle={{
+              background: experience.iconBg,
+              color: "#fff",
+              borderRadius: "50%",
+              boxShadow: "0 0 0 4px #1C1821, 0 0 20px rgba(145, 94, 255, 0.4)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+          }}
+          icon={
+              <div className='flex justify-center items-center w-full h-full' style={{ backgroundColor: '#C5A3FF' }}>
+                  <img
+                      src={experience.icon}
+                      alt={experience.company_name}
+                      className='w-[80%] h-[80%] object-contain'
+                      style={{ borderRadius: "50%" }}
+                  />
+              </div>
+          }
+            className="experience-card"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div>
+                <h3 className='text-white font-bold text-2xl mb-1' style={{ color: '#E6CCFF' }}>{experience.title}</h3>
+                <p
+                    className='text-gray-400 text-lg font-semibold'
+                    style={{ margin: 0, color: '#D09CFA' }}
+                >
+                    {experience.company_name}
+                </p>
+            </div>
 
-            <ul className='mt-5 list-disc ml-5 space-y-3'>
-                {experience.points.map((point, index) => (
-                    <li
-                        key={`experience-point-${index}`}
-                        className='text-gray-300 text-sm pl-1 tracking-wide'
-                        style={{ color: '#C5A3FF' }} 
-                    >
-                        {point}
-                    </li>
-                ))}
-            </ul>
-          </motion.div>
-        </VerticalTimelineElement>
-    );
+            <ul className='mt-5 list-disc ml-5 space-y-3'>
+                {experience.points.map((point, index) => (
+                    <motion.li
+                        key={`experience-point-${index}`}
+                        className='text-gray-300 text-[15px] pl-1 tracking-wide leading-relaxed'
+                        style={{ color: '#C5A3FF' }}
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                    >
+                        {point}
+                    </motion.li>
+                ))}
+            </ul>
+          </motion.div>
+        </VerticalTimelineElement>
+    );
 };
 
 const Experience = () => {

@@ -5,6 +5,7 @@ import { Download, Github, Linkedin } from 'lucide-react';
 import { techStack } from '../constants';
 import { github } from '../assets';
 import { StarsCanvas, ComputersCanvas } from './canvas';
+import TypeWriter from './TypeWriter';
 
 const Hero = () => {
   const handleDownload = () => {
@@ -61,11 +62,19 @@ const Hero = () => {
             </h1>
 
             <div className="space-y-4">
-              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                FullStack <br className='sm:block hidden' />
-                Software <br className='sm:block hidden' />
-                Developer
-              </p>
+              <div className={`mt-2`}>
+                <TypeWriter
+                  texts={[
+                    'FullStack Developer',
+                    'Software Engineer',
+                    'Web Developer',
+                    'Problem Solver',
+                  ]}
+                  speed={100}
+                  deleteSpeed={50}
+                  delayBetweenTexts={2000}
+                />
+              </div>
 
               {/* Tech Stack Pills */}
               <motion.div 
@@ -95,29 +104,35 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
               >
-                <button 
+                <motion.button
                   onClick={handleDownload}
-                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2 justify-center"
+                  whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(147, 51, 234, 0.5)" }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <Download size={20} />
                   Download Resume
-                </button>
-                
-                <button 
+                </motion.button>
+
+                <motion.button
                   onClick={handleGitHubClick}
-                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
+                  className="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2 justify-center"
+                  whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(75, 85, 99, 0.5)" }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <Github size={20} />
                   View GitHub
-                </button>
+                </motion.button>
 
-                <button 
+                <motion.button
                   onClick={handleLinkedInClick}
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2 justify-center"
+                  whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(37, 99, 235, 0.5)" }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <Linkedin size={20} />
                   View LinkedIn
-                </button>
+                </motion.button>
               </motion.div>
             </div>
           </motion.div>

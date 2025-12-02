@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -29,8 +30,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ${
+        scrolled ? "bg-primary backdrop-blur-md bg-opacity-90 shadow-lg" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -55,7 +56,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium`}
+              } hover:text-white text-[18px] font-medium transition-all duration-300 hover:scale-110`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`} className="cursor-pointer">{nav.title}</a>
@@ -77,29 +78,35 @@ const Navbar = () => {
             />
           </button>
 
-          <div
+          <motion.div
             id='mobile-menu'
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            initial={false}
+            animate={toggle ? { opacity: 1, x: 0, display: "flex" } : { opacity: 0, x: 20, transitionEnd: { display: "none" } }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className='p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-xl backdrop-blur-md border border-purple-500/20'
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
+              {navLinks.map((nav, index) => (
+                <motion.li
                   key={nav.id}
-                  className={`font-poppins font-medium text-[16px] ${
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={toggle ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3, delay: toggle ? index * 0.1 : 0 }}
+                  className={`font-poppins font-medium text-[16px] transition-colors duration-300 w-full ${
                     active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                  } hover:text-white`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
                   }}
+                  whileHover={{ x: 5, scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <a href={`#${nav.id}`} className="cursor-pointer">{nav.title}</a>
-                </li>
+                  <a href={`#${nav.id}`} className="cursor-pointer block py-1">{nav.title}</a>
+                </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>

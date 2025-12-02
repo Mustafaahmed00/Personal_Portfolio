@@ -72,7 +72,7 @@ export const techStack = [
   'Framer Motion'
 ];
 
-const resumeSummary = "Software developer with 2+ years of experience delivering high-performance web applications and enterprise solutions. Proven track record of optimizing system performance, reducing transaction times, and enhancing user experiences through innovative technology implementations. Expertise in full-stack development, microservices architecture, and agile methodologies, consistently driving operational efficiency and implementing robust, scalable software solutions that directly contribute to business growth.";
+const resumeSummary = "Full-stack software developer with 2+ years of experience delivering high-performance web applications and enterprise solutions. Currently working as a Web Developer at Game One, specializing in React, TypeScript, and Next.js. Proven track record of optimizing system performance, reducing transaction times, and enhancing user experiences through innovative technology implementations. Expertise in full-stack development, microservices architecture, cloud technologies, and agile methodologies, consistently driving operational efficiency and implementing robust, scalable software solutions that directly contribute to business growth.";
 
 const educationDetails = [
   {
@@ -177,11 +177,24 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Web Developer",
+    company_name: "Game One",
+    icon: web,
+    iconBg: "#383E56",
+    date: "November 2025 – Present",
+    points: [
+      "Developing and maintaining modern web applications using React, TypeScript, and Next.js, creating responsive and interactive user interfaces that enhance user engagement and experience.",
+      "Collaborating with cross-functional teams including designers and backend developers to implement new features and improve existing functionality across multiple web platforms.",
+      "Implementing best practices for web development including code optimization, performance tuning, and ensuring cross-browser compatibility to deliver high-quality web solutions.",
+      "Utilizing modern frontend technologies and tools to build scalable, maintainable web applications while following Agile methodologies and participating in code reviews.",
+    ],
+  },
+  {
     title: "Software Developer",
     company_name: "PNC Bank",
     icon: backend,
     iconBg: "#383E56",
-    date: "June 2025 – Present",
+    date: "June 2025 – October 2025",
     points: [
       "Developed RESTful APIs using Python Django with PostgreSQL databases and Redis caching to efficiently handle high-volume financial transactions, creating responsive React Redux frontends with HTML5/CSS3 styling.",
       "Implemented microservices architecture using Docker and Kubernetes with MongoDB integration, collaborating with cross-functional teams using Git version control and Agile methodologies for enhanced system scalability.",
@@ -215,20 +228,6 @@ const experiences = [
       "Built responsive web components using React and Redux Toolkit, creating scalable UI elements that improved user engagement by 35% and enhanced the platform's accessibility for diverse global users.",
       "Designed and implemented vector database integration for the chatbot system, optimizing information retrieval and ensuring accurate, context-aware responses for humanitarian aid queries.",
       "Collaborated with international volunteers and stakeholders to ensure culturally appropriate localization, testing language implementations across different regions and gathering user feedback for continuous improvement.",
-    ],
-  },
-  {
-    title: "Software Developer",
-    company_name: "Freelancer (Remote)",
-    icon: creator,
-    iconBg: "#383E56",
-    date: "January 2024 – February 2025",
-    points: [
-      "Developed and implemented new features for patient management systems using Java and Spring Boot, collaborating with cross-functional healthcare teams to translate medical requirements into functional code that processed over 50,000 patient records daily.",
-      "Enhanced customer-facing healthcare applications using React and JavaScript, improving UI/UX with responsive HTML5/CSS3 designs that reduced patient navigation steps by 40% and increased mobile patient engagement metrics.",
-      "Applied JUnit and Postman for systematic testing and debugging of Java backend services, contributing to a 25% reduction in clinical system incidents while ensuring compliance with HIPAA medical security protocols.",
-      "Participated in Agile SDLC practices using Git/GitHub for version control, consistently meeting sprint commitments by delivering quality code while maintaining detailed documentation for knowledge sharing in medical software development.",
-      "Assisted in developing RESTful APIs that integrated electronic health record services with MySQL databases, working within the Spring Boot framework to ensure system performance during peak patient admission periods.",
     ],
   },
   {
